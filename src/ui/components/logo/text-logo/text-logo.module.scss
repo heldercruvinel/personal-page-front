@@ -1,0 +1,27 @@
+.textLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.toCode {
+    font-size: 30px;
+    letter-spacing: -0.1em;
+    line-height: normal;
+    height: fit-content;
+    margin-right: 2px;
+}
+
+.cafe {
+    font-size: 40px;
+    line-height: normal;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 800px) {
+    .textLogo {
+        display: none;
+    }
+}

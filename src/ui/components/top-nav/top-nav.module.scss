@@ -1,0 +1,30 @@
+.topNav {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 10px;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    width: fit-content;
+}
+
+.navLinks > li {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .topNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+}

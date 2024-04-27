@@ -1,0 +1,188 @@
+//DEFAULT CONTRAST
+$dark-theme: (
+    "primary": rgb(255 181 151),
+    "on-primary": rgb(85 33 7),
+    "primary-container": rgb(113 54 27),
+    "on-primary-container": rgb(255 219 205),
+
+    "secondary": rgb(231 190 174),
+    "on-secondary": rgb(68 42 31),
+    "secondary-container": rgb(93 64 52),
+    "on-secondary-container": rgb(255 219 205),
+
+    "tertiary": rgb(211 199 143),
+    "on-tertiary": rgb(55 49 6),
+    "tertiary-container": rgb(79 71 27),
+    "on-tertiary-container": rgb(240 227 168),
+
+    "error": rgb(255 180 171),
+    "on-error": rgb(105 0 5),
+    "error-container": rgb(147 0 10),
+    "on-error-container": rgb(255 218 214),
+
+    "background": rgb(26 17 14),
+    "on-background": rgb(241 223 217),
+
+    "surface": rgb(26 17 14),
+    "on-surface": rgb(241 223 217),
+    "surface-variant": rgb(83 67 62),
+    "on-surface-variant": rgb(216 194 186),
+
+    "outline": rgb(160 141 134),
+    "outline-variant": rgb(83 67 62),
+
+    "shadow": rgb(0 0 0),
+    "scrim": rgb(0 0 0),
+
+    "inverse-surface": rgb(241 223 217),
+    "inverse-on-surface": rgb(56 46 42),
+    "inverse-primary": rgb(142 77 48),
+
+    "primary-fixed": rgb(255 219 205),
+    "on-primary-fixed": rgb(54 15 0),
+    "primary-fixed-dim": rgb(255 181 151),
+    "on-primary-fixed-variant": rgb(113 54 27),
+
+    "secondary-fixed": rgb(255 219 205),
+    "on-secondary-fixed": rgb(44 22 12),
+    "secondary-fixed-dim": rgb(231 190 174),
+    "on-secondary-fixed-variant": rgb(93 64 52),
+
+    "tertiary-fixed": rgb(240 227 168),
+    "on-tertiary-fixed": rgb(33 28 0),
+    "tertiary-fixed-dim": rgb(211 199 143),
+    "on-tertiary-fixed-variant": rgb(79 71 27),
+
+    "surface-dim": rgb(26 17 14),
+    "surface-bright": rgb(66 55 51),
+    "surface-container-lowest": rgb(20 12 9),
+    "surface-container-low": rgb(35 26 22),
+    "surface-container": rgb(39 30 26),
+    "surface-container-high": rgb(50 40 36),
+    "surface-container-highest": rgb(61 50 46)
+)
+
+// MEDIUM CONTRAST
+// $primary: rgb(255 187 160);
+// $on-primary: rgb(46 11 0);
+// $primary-container: rgb(202 126 93);
+// $on-primary-container: rgb(0 0 0);
+
+// $secondary: rgb(235 194 178);
+// $on-secondary: rgb(38 17 8);
+// $secondary-container: rgb(173 137 122);
+// $on-secondary-container: rgb(0 0 0);
+
+// $tertiary: rgb(215 203 146);
+// $on-tertiary: rgb(27 22 0);
+// $tertiary-container: rgb(155 145 93);
+// $on-tertiary-container: rgb(0 0 0);
+
+// $error: rgb(255 186 177);
+// $on-error: rgb(55 0 1);
+// $error-container: rgb(255 84 73);
+// $on-error-container: rgb(0 0 0);
+
+// $background: rgb(26 17 14);
+// $on-background: rgb(241 223 217);
+
+// $surface: rgb(26 17 14);
+// $on-surface: rgb(255 249 248);
+// $surface-variant: rgb(83 67 62);
+// $on-surface-variant: rgb(220 198 190);
+
+// $outline: rgb(179 159 151);
+// $outline-variant: rgb(146 127 120);
+
+// $shadow: rgb(0 0 0);
+// $scrim: rgb(0 0 0);
+
+// $inverse-surface: rgb(241 223 217);
+// $inverse-on-surface: rgb(50 40 36);
+// $inverse-primary: rgb(114 55 28);
+
+// $primary-fixed: rgb(255 219 205);
+// $on-primary-fixed: rgb(37 8 0);
+// $primary-fixed-dim: rgb(255 181 151);
+// $on-primary-fixed-variant: rgb(92 38 12);
+
+// $secondary-fixed: rgb(255 219 205);
+// $on-secondary-fixed: rgb(32 12 4);
+// $secondary-fixed-dim: rgb(231 190 174);
+// $on-secondary-fixed-variant: rgb(74 48 37);
+
+// $tertiary-fixed: rgb(240 227 168);
+// $on-tertiary-fixed: rgb(21 17 0);
+// $tertiary-fixed-dim: rgb(211 199 143);
+// $on-tertiary-fixed-variant: rgb(61 54 11);
+
+// $surface-dim: rgb(26 17 14);
+// $surface-bright: rgb(66 55 51);
+// $surface-container-lowest: rgb(20 12 9);
+// $surface-container-low: rgb(35 26 22);
+// $surface-container: rgb(39 30 26);
+// $surface-container-high: rgb(50 40 36);
+// $surface-container-highest: rgb(61 50 46);
+
+// HIGHT CONTRAST
+// $primary: rgb(255 249 248);
+// $on-primary: rgb(0 0 0);
+// $primary-container: rgb(255 187 160);
+// $on-primary-container: rgb(0 0 0);
+
+// $secondary: rgb(255 249 248);
+// $on-secondary: rgb(0 0 0);
+// $secondary-container: rgb(235 194 178);
+// $on-secondary-container: rgb(0 0 0);
+
+// $tertiary: rgb(255 250 244);
+// $on-tertiary: rgb(0 0 0);
+// $tertiary-container: rgb(215 203 146);
+// $on-tertiary-container: rgb(0 0 0);
+
+// $error: rgb(255 249 249);
+// $on-error: rgb(0 0 0);
+// $error-container: rgb(255 186 177);
+// $on-error-container: rgb(0 0 0);
+
+// $background: rgb(26 17 14);
+// $on-background: rgb(241 223 217);
+
+// $surface: rgb(26 17 14);
+// $on-surface: rgb(255 255 255);
+
+// $surface-variant: rgb(83 67 62);
+// $on-surface-variant: rgb(255 249 248);
+
+// $outline: rgb(220 198 190);
+// $outline-variant: rgb(220 198 190);
+
+// $shadow: rgb(0 0 0);
+// $scrim: rgb(0 0 0);
+
+// $inverse-surface: rgb(241 223 217);
+// $inverse-on-surface: rgb(0 0 0);
+// $inverse-primary: rgb(76 26 3);
+
+// $primary-fixed: rgb(255 224 213);
+// $on-primary-fixed: rgb(0 0 0);
+// $primary-fixed-dim: rgb(255 187 160);
+// $on-primary-fixed-variant: rgb(46 11 0);
+
+// $secondary-fixed: rgb(255 224 213);
+// $on-secondary-fixed: rgb(0 0 0);
+// $secondary-fixed-dim: rgb(235 194 178);
+// $on-secondary-fixed-variant: rgb(38 17 8);
+
+// $tertiary-fixed: rgb(244 231 172);
+// $on-tertiary-fixed: rgb(0 0 0);
+// $tertiary-fixed-dim: rgb(215 203 146);
+// $on-tertiary-fixed-variant: rgb(27 22 0);
+
+// $surface-dim: rgb(26 17 14);
+// $surface-bright: rgb(66 55 51);
+// $surface-container-lowest: rgb(20 12 9);
+// $surface-container-low: rgb(35 26 22);
+// $surface-container: rgb(39 30 26);
+// $surface-container-high: rgb(50 40 36);
+// $surface-container-highest: rgb(61 50 46);

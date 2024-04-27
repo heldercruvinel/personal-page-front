@@ -1,0 +1,47 @@
+@use "src/ui/theme-colors/themes";
+@use "sass:map";
+
+@mixin size {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    font-size: 17px
+}
+
+html {
+    @include size;
+}
+
+body {
+    @include size;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.mainContent {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 830px;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+}
+
+header, main, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: inherit;
+}

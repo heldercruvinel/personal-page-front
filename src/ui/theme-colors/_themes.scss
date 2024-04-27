@@ -1,0 +1,78 @@
+@use "src/ui/theme-colors/dark";
+@use "src/ui/theme-colors/light";
+@use "sass:map";
+
+@mixin style($theme) {
+
+    &.primary {
+        color: map.get($theme, "on-primary");
+        background-color: map.get($theme, "primary")
+    }
+
+    &.secondary {
+        color: map.get($theme, "on-secondary");
+        background-color: map.get($theme, "secondary")
+    }
+
+    &.tertiary {
+        color: map.get($theme, "on-secondary");
+        background-color: map.get($theme, "secondary")
+    }
+
+    &.surface{
+        color: map.get($theme, "on-surface-variant");
+        background-color: map.get($theme, "surface-container");
+    }
+    
+    &.background {
+        color: map.get($theme, "on-background");
+        background-color: map.get($theme, "background");
+    }
+
+    &.shadow {
+        box-shadow: 0px 4px 13px -10px map.get($theme, "shadow");
+    }
+
+    &.headerIconLogoColors {
+        stroke: map.get($theme, "primary");
+    }
+
+    &.headerToCodeLogoColors {
+        color: map.get($theme, "secondary");
+    }
+
+    &.headerCafeLogoColors {
+        color: map.get($theme, "primary");
+    }
+
+    &.footerIconLogoColors {
+        stroke: map.get($theme, "on-surface-variant"); 
+    }
+
+    &.footerToCodeLogoColors {
+        color: map.get($theme, "on-surface-variant");
+    }
+
+    &.footerCafeLogoColors {
+        color: map.get($theme, "on-surface-variant");
+    }
+
+    &.themeButton {        
+        color: map.get($theme, "surface-dim");
+        stroke: map.get($theme, "surface-dim");
+        fill: map.get($theme, "surface-dim");
+        background-color: map.get($theme, "tertiary");        
+    }
+
+    &.themeLink {        
+        color: map.get($theme, "on-surface-variant");       
+    }
+}
+
+.light {
+    @include style(light.$light-theme);
+}
+
+.dark {
+    @include style(dark.$dark-theme);
+}
