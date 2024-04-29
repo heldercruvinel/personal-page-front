@@ -1,26 +1,21 @@
 'use client';
 
-import { createContext, useState, useContext } from "react";
+import { createContext, useContext } from "react";
 
 export const ThemeContext = createContext({ 
     theme: 'light', 
     setTheme: (theme: string) => {} 
 });
 
-export function ThemeProvider({ 
-    children 
-}:{
-    children: React.ReactNode;
-}) {
-    const [ theme, setTheme ] = useState('light');
-
-    return(
-        <ThemeContext.Provider value={{ theme, setTheme }}>
-            {children}
-        </ThemeContext.Provider>
-    )
-}
+export const MobileMenuContext = createContext({ 
+    isOpened: false, 
+    setIsOpened: (opened: boolean) => {} 
+});
 
 export function useThemeContext() {
     return useContext(ThemeContext);
+}
+
+export function useMobileMenuContext() {
+    return useContext(MobileMenuContext);
 }

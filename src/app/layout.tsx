@@ -1,7 +1,7 @@
 import './global.scss';
 import type { Metadata } from "next";
 
-import { ThemeProvider } from '../context/Contexts';
+import { ThemeProvider, MobileMenuProvider } from '../context/Providers';
 
 import MobileNav from "@/src/ui/components/mobile-nav/mobile-nav";
 import Header from "@/src/ui/components/header/header";
@@ -23,11 +23,10 @@ export default function RootLayout({
       <body>
         <div className="mainContent">
           <ThemeProvider>
-            <MobileNav
-                // isMenuMobileOpen={isMenuMobileOpen}
-                // setMenuMobileOpe={setIsMenuMobileOpe}
-            />
-            <Header />
+            <MobileMenuProvider>
+              <MobileNav />
+              <Header />
+            </MobileMenuProvider>
               {children}
             <Footer />
           </ThemeProvider>
