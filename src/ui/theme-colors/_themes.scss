@@ -37,6 +37,10 @@
         box-shadow: -3px -3px 13px map.get($theme, "shadow");
     }
 
+    &.shadow-l {
+        box-shadow: 5px 5px 13px map.get($theme, "shadow");
+    }
+
     &.headerIconLogoColors {
         stroke: map.get($theme, "primary");
     }

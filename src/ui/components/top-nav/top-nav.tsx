@@ -7,7 +7,6 @@ import styles from "@/src/ui/components/top-nav/top-nav.module.scss";
 export default function TopNav() {
     return (
         <div className={`${styles.topNav}`}>
-            <MenuIcon />
             <HeaderLogo />
             <Nav classes={`${styles.navLinks}`}/>
         </div>

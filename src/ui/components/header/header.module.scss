@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.headerGroup {
+.group {
     // width: 200px;
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
@@ -16,4 +16,23 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.mobileGroup {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .group {
+        display: none;
+    }
+
+    .mobileGroup {
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        column-gap: 2px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }

@@ -3,7 +3,11 @@
 import styles from "@/src/ui/icons/menu-icon/menu-icon.module.scss";
 import { useThemeContext, useMobileMenuContext } from "@/src/context/Contexts";
 
-export default function MenuIcon() {
+export default function MenuIcon({ 
+    className 
+} : {
+    className?: string
+}) {
     const { theme } = useThemeContext();
     const { setIsOpened } = useMobileMenuContext();
 

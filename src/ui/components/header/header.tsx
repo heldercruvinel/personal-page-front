@@ -10,6 +10,7 @@ import Link from "next/link";
 import TopNav from "@/src/ui/components/top-nav/top-nav";
 import ThemeSwitch from "@/src/ui/components/theme-switch/theme-switch";
 import Button from "@/src/ui/components/button/button";
+import MenuIcon from "../../icons/menu-icon/menu-icon";
 
 export default function Header() {
     const { theme } = useThemeContext();
@@ -22,7 +23,7 @@ export default function Header() {
               setMenuMobileOpe={setIsMenuMobileOpe}
             /> */}
             <TopNav />
-            <div className={`${styles.headerGroup}`}>
+            <div className={`${styles.group}`}>
               <ThemeSwitch />
               <Link 
                 className={`${theme} ${roboto.className} themeLink`}
@@ -35,6 +36,9 @@ export default function Header() {
                 href="/create-account"
               />
             </div>
+            <MenuIcon 
+              className={`${styles.menuIcon}`}
+            />
           </div>     
         </header>
     )

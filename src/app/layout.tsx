@@ -24,11 +24,11 @@ export default function RootLayout({
         <div className="mainContent">
           <ThemeProvider>
             <MobileMenuProvider>
-              <MobileNav />
               <Header />
+                {children}
+              <Footer />
+              <MobileNav />
             </MobileMenuProvider>
-              {children}
-            <Footer />
           </ThemeProvider>
         </div>
       </body>
