@@ -6,15 +6,14 @@
 }
 
 .navLinks {
-    display: flex;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr;
+    column-gap: 10px;
     align-items: center;
     justify-content: center;
     list-style-type: none;
     width: fit-content;
-}
-
-.navLinks > li {
-    margin-left: 10px;
 }
 
 @media only screen and (max-width: 800px) {

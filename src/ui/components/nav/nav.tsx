@@ -17,13 +17,11 @@ export default function Nav({
         <nav className={`${classes} ${styles.nav}`}>
             {menuItemsData.map((item, key) => {
                 return (
-                    <li 
-                        key={key}
-                    >
-                        <Link href={item.url} className={`${theme} ${roboto.className} themeLink`}>
-                            {item.title}
-                        </Link>
-                    </li>)
+                    <Link key={key} href={item.url} className={`${theme} ${roboto.className} themeLink`}>
+                        <div>
+                            {item.title}                        
+                        </div>
+                    </Link>)
             })}
         </nav>
     )

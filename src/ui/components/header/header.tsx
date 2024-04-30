@@ -18,10 +18,6 @@ export default function Header() {
     return (
         <header className={`${theme} ${styles.header} shadow-b surface`}>
           <div className={`container`}>
-            {/* <MobileNav
-              isMenuMobileOpen={isMenuMobileOpen}
-              setMenuMobileOpe={setIsMenuMobileOpe}
-            /> */}
             <TopNav />
             <div className={`${styles.group}`}>
               <ThemeSwitch />
