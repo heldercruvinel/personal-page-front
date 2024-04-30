@@ -9,13 +9,16 @@
 }
 
 .group {
-    // width: 200px;
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
     column-gap: 2px;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.buttonsGroup {
+    display: none;
 }
 
 .mobileGroup {
@@ -34,5 +37,14 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .buttonsGroup {
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        column-gap: 2px;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
     }
 }

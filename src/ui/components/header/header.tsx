@@ -36,9 +36,12 @@ export default function Header() {
                 href="/create-account"
               />
             </div>
-            <MenuIcon 
-              className={`${styles.menuIcon}`}
-            />
+            <div className={`${styles.buttonsGroup}`}>
+              <ThemeSwitch />
+              <MenuIcon 
+                className={`${styles.menuIcon}`}
+              />
+            </div>            
           </div>     
         </header>
     )

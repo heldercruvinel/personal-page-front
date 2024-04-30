@@ -6,15 +6,13 @@
     right: 0;
     bottom: 0;
     z-index: 5;
-    align-items: center;
-    justify-content: center;
+}
 
-    > .buttonClose {
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        cursor: pointer;
-    }
+.buttonClose {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    cursor: pointer;
 }
 
 .close {
@@ -22,5 +20,45 @@
 }
 
 .open {
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+}
+
+.topMenu {
+    height: 100px;
+}
+
+.mobileMenu {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+    > li {
+        text-align: center;
+        align-content: center;
+    }
+}
+
+.bottonMenu {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: flex-start;
+}
+
+.divisor {
+    width: 80%;
+    height: 0px;
+    opacity: 20%;
+    margin-bottom: 50px;
+}
+
+.loginLinks {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 50px 100px;
 }

@@ -16,10 +16,10 @@ export default function ThemeSwitch() {
                     setTheme(theme == 'light' ? 'dark' : 'light');
                     return theme;
                 }}
-                className={`${styles.buttonIcon} ${theme} themeButton`}
+                className={`${styles.buttonIcon} ${theme} tertiary`}
             >
                 <ThemeIcon 
-                    className={`${theme} ${styles.themeIcon} themeButton`}
+                    className={`${theme} ${styles.themeIcon} tertiary`}
                 />
             </button>
         </div>
