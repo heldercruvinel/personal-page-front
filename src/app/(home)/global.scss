@@ -1,27 +1,28 @@
 @use "src/ui/theme-colors/themes";
 @use "sass:map";
 
-@mixin size {
-    height: 100%;
-    width: 100%;
-}
-
 * {
-    font-size: 17px
-}
-
-html {
-    @include size;
+    font-size: 17px;
+    font-family: var(--font-roboto);
+    list-style: none;
 }
 
 body {
-    @include size;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 0;
+}
+
+header, main, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: inherit;
 }
 
 .mainContent {
@@ -34,14 +35,4 @@ body {
     width: 100%;
     margin: 0px;
     padding: 20px;
-}
-
-header, main, footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-a {
-    text-decoration: inherit;
 }

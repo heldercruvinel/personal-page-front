@@ -1,11 +1,5 @@
-import './global.scss';
 import type { Metadata } from "next";
-
-import { ThemeProvider, MobileMenuProvider } from '../context/Providers';
-
-import MobileNav from "@/src/ui/components/mobile-nav/mobile-nav";
-import Header from "@/src/ui/components/header/header";
-import Footer from "@/src/ui/components/footer/footer";
+import { ThemeProvider } from '@/src/context/Providers';
 
 export const metadata: Metadata = {
   title: "To Code Café",
@@ -17,20 +11,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
   return (
     <html lang="en">
       <body>
-        <div className="mainContent">
-          <ThemeProvider>
-            <MobileMenuProvider>
-              <Header />
-                {children}
-              <Footer />
-              <MobileNav />
-            </MobileMenuProvider>
-          </ThemeProvider>
-        </div>
+        <ThemeProvider>
+          {children}
+        </ThemeProvider> 
       </body>
     </html>
   );

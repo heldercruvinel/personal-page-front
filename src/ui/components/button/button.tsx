@@ -1,5 +1,3 @@
-import { useThemeContext } from "@/src/context/Contexts"
-import { roboto } from "@/src/ui/fonts/fonts";
 import styles from "@/src/ui/components/button/button.module.scss";
 import Link from "next/link";
 
@@ -12,11 +10,10 @@ export default function Button({
     href: string
     classes?: string
 }) {
-    const { theme } = useThemeContext();
 
     return (
         <Link 
-            className={`${theme} ${roboto.className} ${styles.btnLink} ${classes} secondary`}
+            className={`${styles.btnLink} ${classes} secondary`}
             href={href}
         >
             <span>

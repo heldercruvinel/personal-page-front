@@ -1,28 +1,22 @@
-'use client';
-
-import { useThemeContext } from "@/src/context/Contexts";
-import { useState } from "react";
-import { roboto } from "../../fonts/fonts";
+// import { roboto } from "../../fonts/fonts";
 import styles from "@/src/ui/components/header/header.module.scss";
 import Link from "next/link";
-
 
 import TopNav from "@/src/ui/components/top-nav/top-nav";
 import ThemeSwitch from "@/src/ui/components/theme-switch/theme-switch";
 import Button from "@/src/ui/components/button/button";
-import MenuIcon from "../../icons/menu-icon/menu-icon";
+import MobileNav from "../mobile-nav/mobile-nav";
 
 export default function Header() {
-    const { theme } = useThemeContext();
-    const [isMenuMobileOpen, setIsMenuMobileOpe] = useState(false);
+
     return (
-        <header className={`${theme} ${styles.header} shadow-b surface`}>
+        <header className={`${styles.header} shadow-b surface`}>
           <div className={`container`}>
             <TopNav />
             <div className={`${styles.group}`}>
               <ThemeSwitch />
               <Link 
-                className={`${theme} ${roboto.className} themeLink`}
+                className={`themeLink`}
                 href="/login"
               >
                 Login
@@ -34,10 +28,8 @@ export default function Header() {
             </div>
             <div className={`${styles.buttonsGroup}`}>
               <ThemeSwitch />
-              <MenuIcon 
-                className={`${styles.menuIcon}`}
-              />
-            </div>            
+              <MobileNav />
+            </div>          
           </div>     
         </header>
     )

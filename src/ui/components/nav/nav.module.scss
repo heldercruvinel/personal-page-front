@@ -1,9 +1,28 @@
 .nav {
-    text-decoration: none;
-
-    > a:hover {
+    a:hover {
         align-content: center;
         opacity: 0.7;
         border-radius: 5px;
     }
 }
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.subMenu {
+    position: relative;
+    right: 0px !important;
+    top: 5px;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.subMenuItem {
+    text-align: left;
+    font-size: 14px;
+}
+
+

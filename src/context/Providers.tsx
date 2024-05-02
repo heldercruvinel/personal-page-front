@@ -1,6 +1,6 @@
 'use client';
 
-import { ThemeContext, MobileMenuContext } from "./Contexts";
+import { ThemeContext } from "./Contexts";
 import { useState } from "react";
 
 export function ThemeProvider({ 
@@ -14,19 +14,5 @@ export function ThemeProvider({
         <ThemeContext.Provider value={{ theme, setTheme }}>
             {children}
         </ThemeContext.Provider>
-    )
-}
-
-export function MobileMenuProvider({ 
-    children 
-}:{
-    children: React.ReactNode;
-}) {
-    const [ isOpened, setIsOpened ] = useState(false);
-
-    return(
-        <MobileMenuContext.Provider value={{ isOpened, setIsOpened }}>
-            {children}
-        </MobileMenuContext.Provider>
     )
 }

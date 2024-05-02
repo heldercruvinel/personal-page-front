@@ -1,15 +1,40 @@
-@use "src/ui/theme-colors/dark";
-@use "src/ui/theme-colors/light";
+.footerMenu {
+    display: grid;
+    justify-items: start;
+    justify-content: center;
+}
 
-// .footer {
+.footerNav {
+    width: 100%;
+    display: grid;    
+    a {
+        width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+}
 
-//     &.light {
-//         color: light.$primary;
-//         background-color: light.$surface-container;
-//     }
+@media only screen and (min-width: 801px) {
+    .footerMenu {
+        grid-template-columns: 1fr 4fr;
+        column-gap: 50px;
+    }
 
-//     &.dark {
-//         color: dark.$primary;
-//         background-color: dark.$surface-container;
-//     }
-// }
+    .footerNav {
+        grid-template-columns: repeat(4, 140px);
+        justify-content: end;
+    }    
+}
+
+@media only screen and (max-width: 800px) {
+    .footerMenu {
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    .footerNav {
+        grid-template-columns: repeat(2, 140px);
+        justify-content: center;
+        row-gap: 20px;
+    }
+}

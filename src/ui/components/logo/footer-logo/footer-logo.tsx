@@ -5,17 +5,15 @@ import Link from "next/link";
 
 export default function FooterLogo() {
     return (
-        <Link href={"/"}>
-            <div className={styles.footerLogo}>
-                <IconLogo 
-                    className="footerIconLogoColors"
-                />
-                <TextLogo 
-                    className={`${styles.textLogo}`}
-                    toCodeClassName="footerToCodeLogoColors"
-                    cafeClassName="footerCafeLogoColors"
-                />
-            </div>
+        <Link href={"/"} className={styles.footerLogo}>
+            <IconLogo 
+                className="footerIconLogoColors"
+            />
+            <TextLogo 
+                className={`${styles.textLogo}`}
+                toCodeClassName="footerToCodeLogoColors"
+                cafeClassName="footerCafeLogoColors"
+            />
         </Link>
     )
 }

@@ -7,15 +7,6 @@ export const ThemeContext = createContext({
     setTheme: (theme: string) => {} 
 });
 
-export const MobileMenuContext = createContext({ 
-    isOpened: false, 
-    setIsOpened: (opened: boolean) => {} 
-});
-
 export function useThemeContext() {
     return useContext(ThemeContext);
-}
-
-export function useMobileMenuContext() {
-    return useContext(MobileMenuContext);
 }
